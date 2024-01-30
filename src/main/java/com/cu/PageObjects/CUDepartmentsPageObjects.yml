@@ -1,0 +1,6 @@
+headerText: "h2"
+createNew: ".//*[@href = '/Department/Create']"
+departmentTable: ".//table/tbody"
+editButton: ".//*[@href='/Department/Edit/2']"
+detailsButton: ".//*[@href='/Department/Details/2']"
+deleteButton: ".//*[@href='/Department/Delete/2']"

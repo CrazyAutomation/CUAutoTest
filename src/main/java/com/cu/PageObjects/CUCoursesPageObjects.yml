@@ -1,0 +1,10 @@
+headerText: "h2"
+createNew: ".//*[@href = '/Course/Create']"
+selectDetailsSearch: ".//*[@action = '/Course']"
+searchTextBox: "SelectedDepartment"
+filterButton: ".//*[@type = 'submit']"
+coursesTable: ".//table/tbody"
+editButton: ".//a[@href='/Course/Edit/1']"
+detailsButton: ".//a[@href='/Course/Details/1']"
+deleteButton: ".//a[@href='/Course/Delete/1']"
+

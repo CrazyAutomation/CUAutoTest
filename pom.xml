@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.contosouniversity</groupId>
+    <artifactId>CUAutoTest</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>CU selenium test suite</name>
+    <description>A test suite to cover the CU user flows.</description>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+
+        <cucumber.reporting.version>5.7.5</cucumber.reporting.version>
+        <cucumber.parallel.version>5.0.0</cucumber.parallel.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <io.cukes.version>7.11.1</io.cukes.version>
+        <selenium.version>4.11.0</selenium.version>
+        <surefire.version>3.0.0-M5</surefire.version>
+
+        <browser>default</browser>
+
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>5.4.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-surefire-provider</artifactId>
+            <version>1.3.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.9.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>5.2.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>5.2.2</version>
+        </dependency>
+
+        <!-- Cucumber dependencies -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>${io.cukes.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>${io.cukes.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-core</artifactId>
+            <version>${io.cukes.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-picocontainer</artifactId>
+            <version>${io.cukes.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-jvm-deps</artifactId>
+            <version>1.0.6</version>
+            <scope>provided</scope>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.junit.vintage</groupId>
+            <artifactId>junit-vintage-engine</artifactId>
+            <version>5.9.2</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-plugin</artifactId>
+            <version>${io.cukes.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-gherkin</artifactId>
+            <version>${io.cukes.version}</version>
+        </dependency>
+        <!-- End of Cucumber dependencies -->
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.12.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-jdk14</artifactId>
+            <version>2.0.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>2.0.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-yaml</artifactId>
+            <version>2.14.2</version>
+        </dependency>
+
+        <!-- Start of Selenium dependencies -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-remote-driver</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-chrome-driver</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-edge-driver</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-firefox-driver</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-support</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-devtools</artifactId>
+            <version>4.0.0-rc-1</version>
+        </dependency>
+
+        <!-- End of Selenium dependencies -->
+
+        <!-- https://mvnrepository.com/artifact/commons-httpclient/commons-httpclient -->
+        <dependency>
+            <groupId>commons-httpclient</groupId>
+            <artifactId>commons-httpclient</artifactId>
+            <version>3.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.15</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.11.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.yaml</groupId>
+            <artifactId>snakeyaml</artifactId>
+            <version>2.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>net.masterthought</groupId>
+            <artifactId>maven-cucumber-reporting</artifactId>
+            <version>${cucumber.reporting.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.temyers</groupId>
+            <artifactId>cucumber-jvm-parallel-plugin</artifactId>
+            <version>${cucumber.parallel.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>${surefire.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>gherkin</artifactId>
+            <version>26.0.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-failsafe-plugin</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.11.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.26</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>5.0.4</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber6-adapter -->
+        <dependency>
+            <groupId>tech.grasshopper</groupId>
+            <artifactId>extentreports-cucumber6-adapter</artifactId>
+            <version>2.17.0</version>
+        </dependency>
+
+    </dependencies>
+
+    <profiles>
+        <profile>
+            <id>local</id>
+            <properties>
+                <parallel.tests>1</parallel.tests>
+            </properties>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <!-- Surefire plugin runs the 'RunCukesTest' runner class in a linear way. -->
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>${surefire.version}</version>
+                        <configuration>
+                            <testSourceDirectory>${basedir}/src/main/java/</testSourceDirectory>
+                            <testClassesDirectory>${project.build.directory}/classes/</testClassesDirectory>
+                            <!-- Passes the defined variables to the tests, DO NOT MODIFY THE ENV VALUE. -->
+                            <systemPropertyVariables>
+                                <environment>local</environment>
+                                <browser>${browser}</browser>
+                            </systemPropertyVariables>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+        <profile>
+            <id>bstack</id>
+            <properties>
+                <parallel.tests>5</parallel.tests>
+            </properties>
+            <build>
+                <plugins>
+                    <plugin>
+                        <!-- Possibly the best HTML cucumber reporting tool which supports parallel running. -->
+                        <groupId>net.masterthought</groupId>
+                        <artifactId>maven-cucumber-reporting</artifactId>
+                        <version>${cucumber.reporting.version}</version>
+                        <executions>
+                            <execution>
+                                <id>execution</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>generate</goal>
+                                </goals>
+                                <configuration>
+                                    <projectName>CUAutoTest</projectName>
+                                    <outputDirectory>${project.build.directory}/reports/${browser}</outputDirectory>
+                                    <inputDirectory>${project.build.directory}/cucumber-parallel/json</inputDirectory>
+                                    <jsonFiles>
+                                        <param>**/*.json</param>
+                                        <parallelTesting>true</parallelTesting>
+                                    </jsonFiles>
+                                    <!-- If you get an error from the following line, ignore it. It's an IDE defect. -->
+                                    <parallelTesting>true</parallelTesting>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+
+                    <plugin>
+                        <!-- cucumber-jvm-parallel-plugin generates multiple cucumber runners for parallel running. -->
+                        <groupId>com.github.temyers</groupId>
+                        <artifactId>cucumber-jvm-parallel-plugin</artifactId>
+                        <version>${cucumber.parallel.version}</version>
+                        <executions>
+                            <execution>
+                                <id>generateRunners</id>
+                                <phase>generate-test-sources</phase>
+                                <goals>
+                                    <goal>generateRunners</goal>
+                                </goals>
+                                <configuration>
+                                    <glue>
+                                        <package>com.cu.cukes</package>
+                                    </glue>
+                                    <featuresDirectory>src/main/resources/features/</featuresDirectory>
+                                    <cucumberOutputDir>target/cucumber-parallel</cucumberOutputDir>
+                                    <tags>@Reg</tags>
+                                    <parallelScheme>FEATURE</parallelScheme>
+                                    <namingScheme>feature-title</namingScheme>
+                                    <customVmTemplate>src/main/resources/cucumber-runner-template.java.vm
+                                    </customVmTemplate>
+                                    <plugins>
+                                        <plugin>
+                                            <name>json</name>
+                                            <outputDirectory>${project.build.directory}/cucumber-parallel/json
+                                            </outputDirectory>
+                                        </plugin>
+                                    </plugins>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+
+                    <plugin>
+                        <!-- Surefire plugin exclusively runs the Browserstack tests in parallel. -->
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>${surefire.version}</version>
+                        <configuration>
+                            <testSourceDirectory>${basedir}/src/main/java/</testSourceDirectory>
+                            <forkCount>${parallel.tests}</forkCount>
+                            <reuseForks>false</reuseForks>
+                            <testFailureIgnore>true</testFailureIgnore>
+                            <!-- Passes the defined variables to the tests, DO NOT MODIFY THE ENV VALUE. -->
+                            <systemPropertyVariables>
+                                <environment>bstack</environment>
+                                <browser>${browser}</browser>
+                            </systemPropertyVariables>
+                            <includes>
+                                <include>**/**IT.class</include>
+                            </includes>
+
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+        <profile>
+            <id>grid</id>
+            <properties>
+                <parallel.tests>5</parallel.tests>
+            </properties>
+            <build>
+                <plugins>
+                    <plugin>
+                        <!-- Possibly the best HTML cucumber reporting tool which supports parallel running. -->
+                        <groupId>net.masterthought</groupId>
+                        <artifactId>maven-cucumber-reporting</artifactId>
+                        <version>${cucumber.reporting.version}</version>
+                        <executions>
+                            <execution>
+                                <id>execution</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>generate</goal>
+                                </goals>
+                                <configuration>
+                                    <projectName>CUAutoTest</projectName>
+                                    <outputDirectory>${project.build.directory}/reports</outputDirectory>
+                                    <inputDirectory>${project.build.directory}/cucumber-parallel/json</inputDirectory>
+                                    <jsonFiles>
+                                        <param>**/*.json</param>
+                                    </jsonFiles>
+                                    <parallelTesting>true</parallelTesting>
+                                    <!-- If you get an error from the following line, ignore it. It's an IDE defect. -->
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+
+                    <plugin>
+                        <!-- cucumber-jvm-parallel-plugin generates multiple cucumber runners for parallel running. -->
+                        <groupId>com.github.temyers</groupId>
+                        <artifactId>cucumber-jvm-parallel-plugin</artifactId>
+                        <version>${cucumber.parallel.version}</version>
+                        <executions>
+                            <execution>
+                                <id>generateRunners</id>
+                                <phase>generate-test-sources</phase>
+                                <goals>
+                                    <goal>generateRunners</goal>
+                                </goals>
+                                <configuration>
+                                    <glue>
+                                        <package>src/main/java/com/cu/cukes</package>
+                                    </glue>
+                                    <featuresDirectory>src/main/resources/features/</featuresDirectory>
+                                    <cucumberOutputDir>target/cucumber-parallel</cucumberOutputDir>
+                                    <tags>@Reg</tags>
+                                    <useTestNG>false</useTestNG>
+                                    <!-- Cukes Runner classes are generated based on features or scenarios, use appropriately. -->
+                                    <parallelScheme>FEATURE</parallelScheme>
+                                    <namingScheme>feature-title</namingScheme>
+                                    <useTestNG>false</useTestNG>
+                                    <customVmTemplate>src/main/resources/cucumber-runner-template.java.vm </customVmTemplate>
+                                    <plugins>
+                                        <plugin>
+                                            <name>json</name>
+                                            <outputDirectory>${project.build.directory}/cucumber-parallel/json
+                                            </outputDirectory>
+                                        </plugin>
+                                    </plugins>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+
+                    <plugin>
+                        <!-- Surefire plugin runs the tests in parallel, based on the runners created from the above plugin. -->
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>${surefire.version}</version>
+                        <configuration>
+                            <testFailureIgnore>true</testFailureIgnore>
+                            <testSourceDirectory>${basedir}/src/main/java/</testSourceDirectory>
+                            <forkCount>${parallel.tests}</forkCount>
+                            <!--                            <useUnlimitedThreads>true</useUnlimitedThreads>-->
+                            <!--                            <reuseForks>true</reuseForks>-->
+                            <!-- Passes the defined variables to the tests, DO NOT MODIFY THE ENV VALUE. -->
+                            <systemPropertyVariables>
+                                <environment>grid</environment>
+                                <browser>${browser}</browser>
+                            </systemPropertyVariables>
+                            <includes>
+                                <include>**/**IT.class</include>
+                            </includes>
+                        </configuration>
+                    </plugin>
+
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+</project>
