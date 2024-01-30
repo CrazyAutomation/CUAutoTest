@@ -1,0 +1,9 @@
+headerText: "h2"
+createNew: ".//*[@href = '/Instructor/Create']"
+instructorTable: ".//table/tbody"
+selectButton: ".//a[@href='/Instructor/Index/4']"
+editButton: ".//a[@href='/Instructor/Edit/4']"
+detailsButton: ".//a[@href='/Instructor/Details/4']"
+deleteButton: ".//a[@href='/Instructor/Delete/4']"
+
+

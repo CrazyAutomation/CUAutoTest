@@ -1,0 +1,9 @@
+  cuHomeMnu: ".//a[@href='/' and @class = 'navbar-brand']"
+
+  homeMnu: ".//li/a[@href='/']"
+  aboutMnu: ".//*[@href='/Home/About']"
+  studentsMnu: ".//*[@href='/Student']"
+  coursesMnu: ".//*[@href='/Course']"
+  instructorsMnu: ".//*[@href='/Instructor']"
+  departmentsMnu: ".//*[@href='/Department']"
+  footer: ".//footer/p"
