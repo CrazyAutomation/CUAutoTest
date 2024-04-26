@@ -1,0 +1,9 @@
+
+†
+java:S1319l"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ï†æÐ
+z
+java:S1319À"cThe type of "fields" should be an interface such as "Map" rather than the implementation "HashMap".(Ê•‰
+k	java:S117P"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(à–Ôåûÿÿÿÿ
+Q
+java:S18742"6Remove this use of "implicitlyWait"; it is deprecated.(ÞÆãƒùÿÿÿÿ
+>	java:S108W")Either remove or fill this block of code.(¾“ã­

@@ -1,0 +1,14 @@
+
+b
+java:S5164"&Call "remove()" on "threadSafeDriver".(Æì™ûJ$672d49c8-aa61-454b-a36e-3c1c49aa03d2
+{
+java:S1161&":Add the "@Override" annotation above this method signature(À‘½ÏıÿÿÿÿJ$3c920fa0-b39d-49c6-8972-f1a0d62676a7
+
+java:S11241"EReorder the modifiers to comply with the Java Language Specification.(ï÷”¿J$f3254b12-dfd8-4d25-9cc9-baed380a0173
+v	java:S125u"<This block of commented-out lines of code should be removed.(¨˜ìJ$4e76db19-8774-49f8-a407-ab759ac2c796
+}	java:S125ƒ"<This block of commented-out lines of code should be removed.(‹³‹ºûÿÿÿÿJ$f8fc87f2-ac1e-40a7-9794-c7319328e3a9
+}	java:S125ˆ"<This block of commented-out lines of code should be removed.(ö˜¿ÇúÿÿÿÿJ$fee94192-c8bf-46f5-93da-6ef6c3dbd31a
+t
+java:S1874²"7Remove this use of "pageLoadTimeout"; it is deprecated.(™Şª“J$13502a28-4862-4515-93cd-8c35d8bfb1fb
+r
+java:S1874µ"6Remove this use of "implicitlyWait"; it is deprecated.(Â¾—.J$734f86b0-038a-430a-8d70-8c1187400a17

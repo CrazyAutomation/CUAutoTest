@@ -187,7 +187,7 @@ public abstract class TestBase {
              */
             switch (env) {
                 case LOCAL : {
-                    DriverFactory.setLocalDriver(Objects.requireNonNull(DriverFactory.LocalBrowser.getMatch("chrome")));
+                    DriverFactory.setLocalDriver(Objects.requireNonNull(DriverFactory.LocalBrowser.getMatch("edge")));
                     driver = DriverFactory.getDriver();
                     break;
                 }

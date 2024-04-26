@@ -6,6 +6,7 @@ com\cu\page\ContosoUniversityStudentsPage.class
 com\cu\cukes\stepdefs\CUAboutPageStepDef.class
 com\cu\util\Hooks.class
 com\cu\cukes\BeforeSuite.class
+com\cu\util\DriverFactory$1.class
 com\cu\page\ContosoUniversityDepartmentsPage.class
 com\cu\util\SystemUtils.class
 com\cu\cukes\stepdefs\CommonStepDefs.class
@@ -16,6 +17,7 @@ com\cu\util\DriverFactory.class
 com\cu\util\DriverUtils.class
 com\cu\page\common\CUCommons.class
 com\cu\cukes\AfterSuite.class
+com\cu\cukes\TestBase$1.class
 com\cu\util\DriverFactory$LocalBrowser.class
 com\cu\page\ContosoUniversityHomePage.class
 com\cu\cukes\runners\RunCukeTest.class

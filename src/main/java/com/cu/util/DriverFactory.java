@@ -115,7 +115,7 @@ public class DriverFactory {
 	private static ChromeDriver getChromeDriver() {
 		System.clearProperty("webdriver.chrome.driver");
 //		WebDriverManager.chromedriver().setup();
-		WebDriverManager.chromedriver().driverVersion("120.0.6099.71").setup();
+		WebDriverManager.chromedriver().driverVersion("124.0.6367.78").setup();
 		/**
 		if(SystemUtils.IS_OS_MAC){
 			LOCAL_DRIVER_BINARY_PATH += CHROME_DRIVER_V + CHROME_DRIVER_VERSION + "-mac64/chromedriver";
