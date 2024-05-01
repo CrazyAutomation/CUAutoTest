@@ -115,7 +115,8 @@ public class DriverFactory {
 	private static ChromeDriver getChromeDriver() {
 		System.clearProperty("webdriver.chrome.driver");
 //		WebDriverManager.chromedriver().setup();
-		WebDriverManager.chromedriver().driverVersion("124.0.6367.78").setup();
+		WebDriverManager.chromedriver().browserVersion("124.0.6367.92").setup();
+
 		/**
 		if(SystemUtils.IS_OS_MAC){
 			LOCAL_DRIVER_BINARY_PATH += CHROME_DRIVER_V + CHROME_DRIVER_VERSION + "-mac64/chromedriver";
@@ -128,12 +129,12 @@ public class DriverFactory {
 		System.setProperty("webdriver.chrome.driver", f.getAbsolutePath());
 		*/
 		ChromeOptions options = new ChromeOptions();
-//		options.addArguments("--disable-notifications");
-//		options.addArguments("--disable-gpu");
-//		options.addArguments("--disable-extensions");
-//		options.addArguments("--no-sandbox");
+		options.addArguments("--disable-notifications");
+		options.addArguments("--disable-gpu");
+		options.addArguments("--disable-extensions");
+		options.addArguments("--no-sandbox");
 		options.addArguments("--start-maximized");
-//		options.addArguments("--disable-dev-shm-usage");
+		options.addArguments("--disable-dev-shm-usage");
 		options.addArguments("--remote-allow-origins=*");
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability(ChromeOptions.CAPABILITY, options);

@@ -127,19 +127,19 @@ public abstract class TestBase {
                     os = ENV_PROPERTY_OS;
                     osVersion = "11";
                     browser = "Edge";
-                    browserVersion = "120";
+                    browserVersion = "124";
                     break;
                 }
                 case "winChrome":{
                     os = ENV_PROPERTY_OS;
                     osVersion = "11";
                     browser = "Chrome";
-                    browserVersion = "120";
+                    browserVersion = "124";
                     break;
                 }
                 case "winFF":{
                     os = ENV_PROPERTY_OS;
-                    osVersion = "10";
+                    osVersion = "11";
                     browser = "Firefox";
                     browserVersion = "63";
                     break;
