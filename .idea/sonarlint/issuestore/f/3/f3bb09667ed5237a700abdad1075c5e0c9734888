@@ -1,29 +1,29 @@
 
 £
-java:S1104"bMake GRID_URL_PROPERTY_NAME a static final constant or non-public and provide accessors if needed.(Ã’œßùÿÿÿÿJ$bd5cd9cb-7b83-43a4-9401-f90e67178108
+java:S1104"bMake GRID_URL_PROPERTY_NAME a static final constant or non-public and provide accessors if needed.(Ã’œßùÿÿÿÿJ$de6e1a7b-2f6e-43b2-9a36-f63893d18435
 }
-java:S1444"<Make this "public static GRID_URL_PROPERTY_NAME" field final(Ã’œßùÿÿÿÿJ$c6c66790-3114-4c39-8b74-092b0169d9fc
+java:S1444"<Make this "public static GRID_URL_PROPERTY_NAME" field final(Ã’œßùÿÿÿÿJ$bae02205-568d-4e37-b35a-8a2d76b37aeb
 ‰
-java:S2095P"HUse try-with-resources or close this "FileReader" in a "finally" clause.(…ô±‚üÿÿÿÿJ$5d552408-4f25-4323-bf82-f2c209daf87a
+java:S2095P"HUse try-with-resources or close this "FileReader" in a "finally" clause.(…ô±‚üÿÿÿÿJ$a2986c18-d69a-4f4d-ba95-f0c77f8d322d
 ˜
-java:S3008"\Rename this field "ENV_PROPERTY_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÏãûƒJ$a72a73de-7d5b-4c1a-b294-4bb225ebae09
+java:S3008"\Rename this field "ENV_PROPERTY_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÏãûƒJ$853f1ec3-7d28-4072-8897-139a661b7639
 –
-java:S3008"ZRename this field "ENV_PROPERTY_OS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æ³¦‰J$309e9f1c-68a4-44e9-be0d-310c7f028363
+java:S3008"ZRename this field "ENV_PROPERTY_OS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æ³¦‰J$e2ab7312-b1bb-4a5f-a38d-05bcad6d86d2
 š
-java:S3008"^Rename this field "ENV_PROPERTY_MOJAVE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬ûºêJ$ee58ecb4-d6d6-4267-b255-7c446666ab1a
+java:S3008"^Rename this field "ENV_PROPERTY_MOJAVE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬ûºêJ$104fa9f9-2fb2-41a0-9f60-cd0d181a986f
 ¢
-java:S3008"aRename this field "BASE_URL_PROPERTY_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡±ñÖúÿÿÿÿJ$28669b6d-d06b-4c3d-a31b-fd605e47deaf
+java:S3008"aRename this field "BASE_URL_PROPERTY_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡±ñÖúÿÿÿÿJ$ae7d1535-3bb2-4dcf-8887-34f02c4ab99a
 ¢
-java:S3008"aRename this field "GRID_URL_PROPERTY_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã’œßùÿÿÿÿJ$544ab8e1-b5f7-4ba1-9bbc-61d3f7336e65
+java:S3008"aRename this field "GRID_URL_PROPERTY_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã’œßùÿÿÿÿJ$53d84049-ea73-4e27-9ee9-40b3c837debe
 
-java:S3008 "aRename this field "LOCAL_ID_PROPERTY_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úŒÚˆJ$c0e1e33d-2e94-4a0c-b7da-d2dd5c4da228
+java:S3008 "aRename this field "LOCAL_ID_PROPERTY_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úŒÚˆJ$8b9565c9-9051-4dc0-bcc2-4cfde0c89c75
 ¦
-java:S3008!"eRename this field "PROJECT_NAME_PROPERTY_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÜÜº“þÿÿÿÿJ$febd6947-4085-41d3-bf36-6df017255dec
+java:S3008!"eRename this field "PROJECT_NAME_PROPERTY_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÜÜº“þÿÿÿÿJ$ff7e7b2a-6d5e-40b6-bdb3-a54992d23cef
 ž
-java:S3008""bRename this field "BUILD_NUM_PROPERTY_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂÓµJ$1e61e657-038b-4ad5-9688-8a9bec9c7623
+java:S3008""bRename this field "BUILD_NUM_PROPERTY_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂÓµJ$398b5793-4e7d-471f-bf64-4c2307382f62
 ¡
-java:S3008$"`Rename this field "BROWSER_PROPERTY_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦¾ÏþÿÿÿÿJ$c8d7316c-3342-4969-8c88-6596c15efa9c
+java:S3008$"`Rename this field "BROWSER_PROPERTY_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦¾ÏþÿÿÿÿJ$9f6c5ec0-7d28-4727-b721-d12b80f21183
 ¤
-java:S3008&"cRename this field "BSTACK_URL_PROPERTY_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù¼¼˜øÿÿÿÿJ$0f9cbe4d-08be-4d4f-801a-7685d5cafda3
+java:S3008&"cRename this field "BSTACK_URL_PROPERTY_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù¼¼˜øÿÿÿÿJ$48b703f0-332a-4423-b228-87a23435ea81
 «
-java:S3008'"jRename this field "BSTACK_LOCAL_BOOL_PROPERTY_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø¶ðŠÿÿÿÿÿJ$3c7b860b-9eb5-42b0-a9fd-e555aed65ed9
+java:S3008'"jRename this field "BSTACK_LOCAL_BOOL_PROPERTY_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø¶ðŠÿÿÿÿÿJ$8979e0a2-c838-4027-b40a-a726cd15b7c1
