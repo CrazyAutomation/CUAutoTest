@@ -31,8 +31,8 @@ import com.cu.util.DriverFactory;
 				"json:target/cucumber-report/cucumber.json"},
 		features = "src/main/resources/features",
 		glue = {"com.cu.cukes.stepdefs", "com.cu.util"},
-//		tags = "@Reg"
-		tags= "@Test01"
+		tags = "@Reg"
+//		tags= "@Test01"
 		// Use the tags to specify which tests to run.
 )
 public class RunCukeTest {

@@ -13,14 +13,14 @@
     <description>A test suite to cover the CU user flows.</description>
 
     <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
 
-        <cucumber.reporting.version>9863b38b-beta</cucumber.reporting.version>
+        <cucumber.reporting.version>5.8.0</cucumber.reporting.version>
         <cucumber.parallel.version>5.0.0</cucumber.parallel.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <io.cukes.version>7.12.0</io.cukes.version>
+        <io.cukes.version>7.17.0</io.cukes.version>
         <selenium.version>4.20.0</selenium.version>
         <surefire.version>3.0.0-M5</surefire.version>
 
@@ -85,20 +85,7 @@
             <artifactId>cucumber-picocontainer</artifactId>
             <version>${io.cukes.version}</version>
         </dependency>
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-jvm-deps</artifactId>
-            <version>1.0.6</version>
-            <scope>provided</scope>
-        </dependency>
 
-
-        <dependency>
-            <groupId>org.junit.vintage</groupId>
-            <artifactId>junit-vintage-engine</artifactId>
-            <version>5.11.0-M1</version>
-            <scope>test</scope>
-        </dependency>
 
         <dependency>
             <groupId>io.cucumber</groupId>
@@ -108,8 +95,23 @@
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-gherkin</artifactId>
-            <version>${io.cukes.version}</version>
+            <version>7.17.0</version>
         </dependency>
+
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-jvm-deps</artifactId>
+            <version>1.0.6</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.vintage</groupId>
+            <artifactId>junit-vintage-engine</artifactId>
+            <version>5.11.0-M1</version>
+        </dependency>
+
+
         <!-- End of Cucumber dependencies -->
 
         <dependency>
@@ -122,6 +124,7 @@
             <artifactId>slf4j-jdk14</artifactId>
             <version>2.0.13</version>
         </dependency>
+
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
@@ -167,12 +170,6 @@
             <version>${selenium.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-devtools</artifactId>
-            <version>4.0.0-rc-1</version>
-        </dependency>
-
         <!-- End of Selenium dependencies -->
 
         <!-- https://mvnrepository.com/artifact/commons-httpclient/commons-httpclient -->
@@ -181,6 +178,7 @@
             <artifactId>commons-httpclient</artifactId>
             <version>3.1</version>
         </dependency>
+
         <!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
         <dependency>
             <groupId>commons-codec</groupId>
@@ -192,22 +190,19 @@
             <artifactId>commons-io</artifactId>
             <version>2.16.1</version>
         </dependency>
-        <dependency>
-            <groupId>org.yaml</groupId>
-            <artifactId>snakeyaml</artifactId>
-            <version>2.0</version>
-        </dependency>
 
         <dependency>
             <groupId>net.masterthought</groupId>
             <artifactId>maven-cucumber-reporting</artifactId>
             <version>${cucumber.reporting.version}</version>
         </dependency>
+
         <dependency>
             <groupId>com.github.temyers</groupId>
             <artifactId>cucumber-jvm-parallel-plugin</artifactId>
             <version>${cucumber.parallel.version}</version>
         </dependency>
+
         <dependency>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-plugin</artifactId>
@@ -217,7 +212,7 @@
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>gherkin</artifactId>
-            <version>27.0.0</version>
+            <version>28.0.0</version>
         </dependency>
 
         <dependency>
@@ -226,11 +221,6 @@
             <version>3.2.5</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.13.0</version>
-        </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -245,21 +235,8 @@
             <version>5.1.1</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber6-adapter -->
-        <dependency>
-            <groupId>tech.grasshopper</groupId>
-            <artifactId>extentreports-cucumber6-adapter</artifactId>
-            <version>2.17.0</version>
-        </dependency>
-
     </dependencies>
-    <repositories>
-        <repository>
-            <id>maven_central</id>
-            <name>Maven Central</name>
-            <url>https://repo.maven.apache.org/maven2/</url>
-        </repository>
-    </repositories>
+
 
     <profiles>
         <profile>
@@ -272,6 +249,15 @@
             </activation>
             <build>
                 <plugins>
+                    <plugin>
+
+                        <artifactId>maven-compiler-plugin</artifactId>
+                        <version>3.8.1</version>
+                        <configuration>
+                            <source>17</source>
+                            <target>17</target>
+                        </configuration>
+                    </plugin>
                     <plugin>
                         <!-- Surefire plugin runs the 'RunCukesTest' runner class in a linear way. -->
                         <groupId>org.apache.maven.plugins</groupId>
@@ -287,6 +273,7 @@
                             </systemPropertyVariables>
                         </configuration>
                     </plugin>
+
                 </plugins>
             </build>
         </profile>
@@ -298,6 +285,14 @@
             </properties>
             <build>
                 <plugins>
+                    <plugin>
+                        <artifactId>maven-compiler-plugin</artifactId>
+                        <version>3.8.1</version>
+                        <configuration>
+                            <source>17</source>
+                            <target>17</target>
+                        </configuration>
+                    </plugin>
                     <plugin>
                         <!-- Possibly the best HTML cucumber reporting tool which supports parallel running. -->
                         <groupId>net.masterthought</groupId>
@@ -393,6 +388,14 @@
             <build>
                 <plugins>
                     <plugin>
+                        <artifactId>maven-compiler-plugin</artifactId>
+                        <version>3.8.1</version>
+                        <configuration>
+                            <source>17</source>
+                            <target>17</target>
+                        </configuration>
+                    </plugin>
+                    <plugin>
                         <!-- Possibly the best HTML cucumber reporting tool which supports parallel running. -->
                         <groupId>net.masterthought</groupId>
                         <artifactId>maven-cucumber-reporting</artifactId>
@@ -442,7 +445,8 @@
                                     <parallelScheme>FEATURE</parallelScheme>
                                     <namingScheme>feature-title</namingScheme>
                                     <useTestNG>false</useTestNG>
-                                    <customVmTemplate>src/main/resources/cucumber-runner-template.java.vm </customVmTemplate>
+                                    <customVmTemplate>src/main/resources/cucumber-runner-template.java.vm
+                                    </customVmTemplate>
                                     <plugins>
                                         <plugin>
                                             <name>json</name>

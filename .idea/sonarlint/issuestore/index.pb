@@ -15,3 +15,5 @@ Z
 ,src/main/java/com/cu/util/DriverFactory.java,a\9\a979ee180262809c03d19deb7022d5e9f92de0f4
 `
 0src/main/java/com/cu/util/CapabilityManager.java,e\5\e5612f35ff26c7fba63e32b4777ea5534a485ea7
+d
+4src/main/java/com/cu/cukes/helpers/MouseActions.java,b\1\b126c710cf9e2789360894bc0f61e2ca22803f72

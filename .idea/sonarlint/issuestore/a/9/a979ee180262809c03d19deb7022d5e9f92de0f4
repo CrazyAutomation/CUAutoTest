@@ -6,7 +6,7 @@ java:S1161&":Add the "@Override" annotation above this method signature(À‘½Ïýÿÿ
 ˆ
 java:S11241"EReorder the modifiers to comply with the Java Language Specification.(ï÷”¿8íÑ¬˜ó1J$a20f8ff5-c9de-4f4b-9cb9-d023f64a9ab7
 }	java:S125u"<This block of commented-out lines of code should be removed.(¨˜ì8ŠÒ¬˜ó1J$d8051443-752b-405b-9a7b-98e884f31d2c
-{
-java:S1874³"7Remove this use of "pageLoadTimeout"; it is deprecated.(™Þª“8³Ò¬˜ó1J$1afea8eb-bf71-452d-867b-78ae72b83bd8
-y
-java:S1874¶"6Remove this use of "implicitlyWait"; it is deprecated.(Â¾—.8¶Ò¬˜ó1J$a8d1cff3-d386-4585-b9cb-2e3f8c95d9b8
+U
+java:S1874³"7Remove this use of "pageLoadTimeout"; it is deprecated.(™Þª“8õì‹›÷1
+S
+java:S1874¶"6Remove this use of "implicitlyWait"; it is deprecated.(Â¾—.8øì‹›÷1
